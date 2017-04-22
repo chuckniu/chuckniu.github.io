@@ -3464,6 +3464,7 @@ footer .footer_bottom {
 
 .bottomword p {
 	font-style: italic;
+        font-size: medium;
 }
 .entry .gist {
   background: #eee;
