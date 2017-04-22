@@ -3449,7 +3449,7 @@ footer .footer_bottom {
 /* CSS Document */
 
 .sb-menu li a {
-        font-weight: 300!important;
+        font-weight: 100!important;
         font-size: medium!important;
         color: #888!important;
 }
@@ -3464,7 +3464,6 @@ footer .footer_bottom {
 
 .bottomword p {
 	font-style: italic;
-	font-size: medium;
 }
 .entry .gist {
   background: #eee;
