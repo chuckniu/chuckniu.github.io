@@ -3448,7 +3448,24 @@ footer .footer_bottom {
 @charset "utf-8";
 /* CSS Document */
 
+.sb-menu li a {
+        font-weight: 300!important;
+        font-size: medium!important;
+        color: #888!important;
+}
 
+.bottomword {
+        position: relative;
+        background: #eee;
+        padding: 10px;    
+        border-radius: 3px;
+        text-align: center;
+}
+
+.bottomword p {
+	font-style: italic;
+	font-size: medium;
+}
 .entry .gist {
   background: #eee;
   border: 1px solid color-border;
