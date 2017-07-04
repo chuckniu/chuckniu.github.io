@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chuckniu.github.io/"/>
-  <updated>2017-05-01T14:58:47.631Z</updated>
+  <updated>2017-07-04T11:12:48.808Z</updated>
   <id>https://chuckniu.github.io/</id>
   
   <author>
@@ -20,15 +20,93 @@
     <link href="https://chuckniu.github.io/2017/05/01/Go-In-Action/"/>
     <id>https://chuckniu.github.io/2017/05/01/Go-In-Action/</id>
     <published>2017-05-01T14:52:59.000Z</published>
-    <updated>2017-05-01T14:58:47.631Z</updated>
+    <updated>2017-07-04T11:12:48.808Z</updated>
     
-    <content type="html"><![CDATA[<p>本文偏重于应用，同时穿插一些语法细节，主要记录自己的使用经验，先开个头，正文待续…</p>
+    <content type="html"><![CDATA[<h4 id="1-Golang-起源"><a href="#1-Golang-起源" class="headerlink" title="1. Golang 起源"></a>1. Golang 起源</h4><p>GO 语言由 Google 于2009年11月开源，TIOBE 2009年，2016年年度语言。</p>
+<p>主要贡献者：Ken Thompson, Rob Pike, Robert Griesemer，1.0 版本 2012 年 3 月 release， 最新版本为 Go 1.8。</p>
+<p>官网：<a href="https://golang.org/" target="_blank" rel="external">https://golang.org/</a></p>
+<p>Go 语言是系统语言，风格简单实用，兼顾性能和效率，并发能力超强。</p>
+<p>CSP 并发模型，基于协程(coroutine), goroutine。</p>
+<p>业界案例：Docker，Hyperledger, TiDB</p>
+<h4 id="2-安装环境"><a href="#2-安装环境" class="headerlink" title="2. 安装环境"></a>2. 安装环境</h4><p>Linux，Mac，Windows 等平台都有相应的安装包，环境变量设置 GOROOT, GOPATH</p>
+<p>基础命令：</p>
+<ol>
+<li>go build   编译</li>
+<li>go run  运行</li>
+<li>go install 编译并复制到 bin 目录</li>
+<li>go get 安装依赖包</li>
+<li>go test 测试</li>
+</ol>
+<h4 id="3-基础语法"><a href="#3-基础语法" class="headerlink" title="3. 基础语法"></a>3. 基础语法</h4><p>规约：大小写约定权限，不用分号</p>
+<p>保留关键字25个：</p>
+<ul>
+<li>var, const ：变量和常量的声明</li>
+<li>package, import: 包声明，包导入</li>
+<li>func： 定义函数和方法</li>
+<li>return： 从函数返回</li>
+<li>defer：在函数退出之前执行</li>
+<li>go : 用于并行</li>
+<li>select: 用于选择不同类型的通讯</li>
+<li>interface: 用于定义接口</li>
+<li>struct: 用于定义抽象数据类型</li>
+<li>break、case、continue、for、fallthrough、else、if、switch、goto、default: 流程控制</li>
+<li>chan: 用于channel通讯</li>
+<li>type； 用于声明自定义类型</li>
+<li>map： 用于声明map类型数据</li>
+<li>range: 遍历对象</li>
+</ul>
+<p>基本类型：</p>
+<ul>
+<li>布尔型：bool</li>
+<li>整型：int int64 int32 int16 int8 uint8(byte) uint16 uint32 uint64 uint</li>
+<li>浮点型：float32 float64</li>
+<li>复数型：complex64 complex128</li>
+<li>字符串：string</li>
+<li>字符型：byte, rune</li>
+</ul>
+<p>复合类型：array, struct, function, interface, slice, map, channel</p>
+<p>内置函数：</p>
+<ul>
+<li>new 分配零值内存 并返回指针</li>
+<li>make 分配内存初始化结构 并返回对象</li>
+<li>append</li>
+<li>close</li>
+<li>recover</li>
+<li>panic</li>
+<li>len</li>
+<li>delete</li>
+<li>copy</li>
+</ul>
+<h4 id="4-实例"><a href="#4-实例" class="headerlink" title="4. 实例"></a>4. 实例</h4><ul>
+<li><p>Hello World</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">package main</div><div class="line"></div><div class="line">import (</div><div class="line">	&quot;fmt&quot;</div><div class="line">)</div><div class="line"></div><div class="line">func main() &#123;</div><div class="line">	fmt.Println(&quot;Hello，世界!&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>变量定义</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">package main</div><div class="line"></div><div class="line">import (</div><div class="line">&quot;fmt&quot;</div><div class="line">)</div><div class="line"></div><div class="line">var(</div><div class="line">	one int</div><div class="line">	two string</div><div class="line">)</div><div class="line"></div><div class="line">func main() &#123;</div><div class="line">	one, two = 1,&quot;2&quot;</div><div class="line">	three:= &quot;2&quot;</div><div class="line">	fmt.Println(one, two, three )</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>struct, func</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">package main</div><div class="line"></div><div class="line">import (</div><div class="line">	&quot;fmt&quot;</div><div class="line">)</div><div class="line"></div><div class="line">type person struct&#123;</div><div class="line">	name string</div><div class="line">	age int</div><div class="line">	gender byte</div><div class="line">&#125;</div><div class="line"></div><div class="line">func (p *person) getAge() int &#123;</div><div class="line">	return p.age</div><div class="line">&#125;</div><div class="line"></div><div class="line">func (p *person) getNameAndAge() (string, int)&#123;</div><div class="line">	return p.name, p.age</div><div class="line">&#125;</div><div class="line"></div><div class="line">func main() &#123;</div><div class="line">	me := person&#123;</div><div class="line">		name: &quot;Meng&quot;,</div><div class="line">		age:18,</div><div class="line">		gender: 0&#125;</div><div class="line"></div><div class="line">	wo:= new(person)</div><div class="line">	wo.name = &quot;Xi&quot;</div><div class="line">	wo.age = 20</div><div class="line">	wo.gender = 1</div><div class="line">	fmt.Println( me.getAge() )</div><div class="line">	fmt.Println( wo.getNameAndAge() )</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>array，slice</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">package main</div><div class="line"></div><div class="line">import (</div><div class="line">	&quot;fmt&quot;</div><div class="line">)</div><div class="line"></div><div class="line">func main() &#123;</div><div class="line">	var array = [5]string&#123;&quot;1&quot;,&quot;2&quot;&#125;</div><div class="line">	var slice_ []int = make([]int,5,10)</div><div class="line">	fmt.Println(array)</div><div class="line">	fmt.Println(slice_)</div><div class="line">	slice_ = append(slice_,6)</div><div class="line">	array[5]=&quot;6&quot; //报错</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>chan</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">package main</div><div class="line"></div><div class="line">import &quot;fmt&quot;</div><div class="line"></div><div class="line">func sum(values []int, resultChan chan int) &#123;</div><div class="line">	sum := 0</div><div class="line">	for _, value := range values &#123;</div><div class="line">		sum += value</div><div class="line">	&#125;</div><div class="line">	// 将计算结果发送到channel中</div><div class="line">	resultChan &lt;- sum</div><div class="line">&#125;</div><div class="line">func main() &#123;</div><div class="line">	values := []int&#123;1, 2, 3, 4, 5, 6, 7, 8, 9, 10&#125;</div><div class="line">	resultChan := make(chan int, 3)</div><div class="line">	go sum(values[:len(values)/2], resultChan)</div><div class="line">	go sum(values[len(values)/2:], resultChan)</div><div class="line">	go sum(values[len(values)/3:], resultChan)</div><div class="line">	sum1, sum2, sum3 := &lt;-resultChan, &lt;-resultChan, &lt;-resultChan</div><div class="line">	fmt.Println(&quot;Result:&quot;, sum1, sum2, sum3)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>Web Server</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">package main</div><div class="line">import (</div><div class="line">	&quot;io&quot;</div><div class="line">	&quot;net/http&quot;</div><div class="line">	&quot;log&quot;</div><div class="line">)</div><div class="line"></div><div class="line">func HelloServer(w http.ResponseWriter, req *http.Request) &#123;</div><div class="line">	io.WriteString(w, &quot;hello, world!\n&quot;)</div><div class="line">&#125;</div><div class="line"></div><div class="line">func main() &#123;</div><div class="line">	http.HandleFunc(&quot;/hello&quot;, HelloServer)</div><div class="line">	err := http.ListenAndServe(&quot;:8080&quot;, nil)</div><div class="line">	if err != nil &#123;</div><div class="line">		log.Fatal(&quot;ListenAndServe: &quot;, err)</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="5-Beego-Web-Framworks"><a href="#5-Beego-Web-Framworks" class="headerlink" title="5.Beego Web Framworks"></a>5.Beego Web Framworks</h4><p><a href="https://beego.me/" target="_blank" rel="external">Beego 官网 </a></p>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;本文偏重于应用，同时穿插一些语法细节，主要记录自己的使用经验，先开个头，正文待续…&lt;/p&gt;
-
+      &lt;h4 id=&quot;1-Golang-起源&quot;&gt;&lt;a href=&quot;#1-Golang-起源&quot; class=&quot;headerlink&quot; title=&quot;1. Golang 起源&quot;&gt;&lt;/a&gt;1. Golang 起源&lt;/h4&gt;&lt;p&gt;GO 语言由 Google 于2009年11月开源，TIOBE 
     
     </summary>
     
