@@ -1,28 +1,195 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>DreamLand</title>
-  
-  <link href="/atom.xml" rel="self"/>
-  
-  <link href="https://chuckniu.github.io/"/>
-  <updated>2018-07-08T17:47:49.370Z</updated>
-  <id>https://chuckniu.github.io/</id>
-  
-  <author>
-    <name>Niu</name>
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>Fabric 简明使用手册 | DreamLand</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="DreamLand">
+    <meta name="author" content="Niu">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="DreamLand" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Fabric 简明使用手册</title>
-    <link href="https://chuckniu.github.io/2017/06/08/Fabric-%E7%AE%80%E6%98%8E%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/"/>
-    <id>https://chuckniu.github.io/2017/06/08/Fabric-简明使用手册/</id>
-    <published>2017-06-08T15:49:09.000Z</published>
-    <updated>2018-07-08T17:47:49.370Z</updated>
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
     
-    <content type="html"><![CDATA[<h3 id="Preface"><a href="#Preface" class="headerlink" title="Preface"></a><strong>Preface</strong></h3><blockquote>
+
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+  
+  
+  <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="atom.xml">
+  
+  
+
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3b0b1d93e603b301a35dfc18d72011e2";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">主页</a></li>
+            <li><a href="/archives/" class="animsition-link" title="archive">归档</a></li>
+            <!-- Dropdown Menu -->
+			 
+            
+        	<li>
+        		<a class="sb-toggle-submenu">目录<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/BlockChain/" class="animsition-link">BlockChain<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Blog/" class="animsition-link">Blog<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/Go/" class="animsition-link">Go<small>(1)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about/" class="animsition-link" title="about">关于</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo 
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">DreamLand</a></li>
+                            <li class="nolink"><span>Dream BIG</span></li>
+                            
+                            <li><a href="https://github.com/chuckniu" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/chuckniu" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2017-06-08T15:49:09.000Z" itemprop="datePublished">
+          2017-06-08
+      </time>
+    
+    
+    | 
+    <a href='/tags/Hyperledger-Fabric-BlockChain/'>Hyperledger, Fabric, BlockChain</a>
+    
+    
+</span>
+                <h1>Fabric 简明使用手册</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<h3 id="Preface"><a href="#Preface" class="headerlink" title="Preface"></a><strong>Preface</strong></h3><blockquote>
 <p>“The Times 03/Jan/2009 Chancellor on brink of second bailout for banks（2009年1月3日，财政大臣正处于实施第二轮银行紧急援助的边缘）。”</p>
 </blockquote>
 <p>比特币，C++ 开发。 核心宗旨：去中心化，开放性，自洽性，不可篡改，匿名性</p>
@@ -121,152 +288,125 @@
 <p><center><img src="https://raw.githubusercontent.com/IBM-Blockchain/marbles/v3.0/doc_images/use_marbles1.png" alt="marbles market"></center><br></p>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><hr>
 <p><a href="https://wiki.hyperledger.org/" target="_blank" rel="external">Hyperledger Wiki</a><br><a href="http://hyperledger-fabric.readthedocs.io/en/latest/" target="_blank" rel="external">Fabric 官方文档</a><br><a href="http://mp.weixin.qq.com/s/glUhSF8yV7jkqvupd_5Rpg" target="_blank" rel="external">Fabric v1.0</a><br><a href="http://www.8btc.com/hyperledger-fabric1-0" target="_blank" rel="external">Fabric v1.0 架构概览</a><br><a href="http://blog.csdn.net/zxzxzxzx2121/article/details/53034151" target="_blank" rel="external">Fabric 协议</a><br><a href="http://www.8btc.com/hyperledger-fabric" target="_blank" rel="external">Fabric 术语</a><br><a href="https://yeasy.gitbooks.io/blockchain_guide/hyperledger/v0.6/install.html" target="_blank" rel="external">Fabric 安装部署</a><br><a href="https://github.com/IBM-Blockchain/learn-chaincode" target="_blank" rel="external">Learn Chaincode</a><br><a href="https://github.com/IBM-Blockchain" target="_blank" rel="external">IBM-Blockchain</a><br><a href="http://www.cnblogs.com/lion.net/p/6160548.html" target="_blank" rel="external">Swarm 构建</a><br><a href="https://docs.docker.com/engine/getstarted-voting-app/" target="_blank" rel="external">Swarm Compose 样例</a><br><a href="https://docs.docker.com/compose/compose-file/#version-3" target="_blank" rel="external">Docker Compose Version 3</a><br><a href="http://wutongtree.github.io/" target="_blank" rel="external">区块链实用手册</a><br><a href="https://www.gitbook.com/book/yeasy/blockchain_guide/details" target="_blank" rel="external">区块链技术指南</a><br><a href="http://geek.csdn.net/news/detail/134967" target="_blank" rel="external">区块链开发技术综述</a><br><a href="http://www.dockerinfo.net/3738.html" target="_blank" rel="external">Docker 跨主机通信</a><br><a href="http://fabric-chaintool.readthedocs.io/en/latest/" target="_blank" rel="external">Fabric Chaintool</a><br><a href="http://bitcoin-on-nodejs.ebookchain.org/" target="_blank" rel="external">Ebookchain</a><br><a href="http://www.mail-archive.com/cryptography@metzdowd.com/msg09997.html" target="_blank" rel="external">Bitcoin P2P e-cash paper</a><br><a href="https://blockchain.info/" target="_blank" rel="external">Bitcoin 市场</a><br><a href="https://www.maicoin.com/zh-TW/charts/btc" target="_blank" rel="external">比特币价格走势</a><br><a href="https://en.wikipedia.org/wiki/Satoshi_Nakamoto" target="_blank" rel="external">Satoshi Nakamoto</a><br><a href="https://en.wikipedia.org/wiki/Vitalik_Buterin" target="_blank" rel="external">Vitalik Buterin</a></p>
-]]></content>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
     
-    <summary type="html">
-    
-      &lt;h3 id=&quot;Preface&quot;&gt;&lt;a href=&quot;#Preface&quot; class=&quot;headerlink&quot; title=&quot;Preface&quot;&gt;&lt;/a&gt;&lt;strong&gt;Preface&lt;/strong&gt;&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;“The Times 03/Jan/20
-    
-    </summary>
-    
-      <category term="BlockChain" scheme="https://chuckniu.github.io/categories/BlockChain/"/>
-    
-    
-      <category term="Hyperledger, Fabric, BlockChain" scheme="https://chuckniu.github.io/tags/Hyperledger-Fabric-BlockChain/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Go In Action</title>
-    <link href="https://chuckniu.github.io/2017/05/01/Go-In-Action/"/>
-    <id>https://chuckniu.github.io/2017/05/01/Go-In-Action/</id>
-    <published>2017-05-01T14:52:59.000Z</published>
-    <updated>2017-07-04T16:41:21.407Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="1-Golang-起源"><a href="#1-Golang-起源" class="headerlink" title="1. Golang 起源"></a>1. Golang 起源</h4><p>GO 语言由 Google 于 2009 年 11 月开源，荣膺 TIOBE 2009，2016 年度语言。</p>
-<p>主要贡献者为 Ken Thompson, Rob Pike, Robert Griesemer 等， 2012 年 3 月 release 1.0 版本， 最新版本 Go 1.8。</p>
-<p>官网：<a href="https://golang.org/" target="_blank" rel="external">https://golang.org/</a></p>
-<p>Go 语言设计为系统语言，风格简单实用，兼顾性能和效率，基于 CSP 并发模型，原生协程( goroutine )处理, 并发能力卓越。</p>
-<p>业界案例：Docker, Hyperledger, TiDB</p>
-<h4 id="2-安装环境"><a href="#2-安装环境" class="headerlink" title="2. 安装环境"></a>2. 安装环境</h4><p>Linux，Mac，Windows 等平台都有相应的安装包，安装完毕后设置 GOPATH 环境变量作为 workspace。</p>
-<p>基础命令：</p>
-<ol>
-<li>go build   编译</li>
-<li>go run  运行</li>
-<li>go install 编译并复制到 bin 目录</li>
-<li>go get 安装依赖包</li>
-<li>go test 测试</li>
-</ol>
-<h4 id="3-基础语法"><a href="#3-基础语法" class="headerlink" title="3. 基础语法"></a>3. 基础语法</h4><p>规约：大小写约定权限，不用分号</p>
-<p>基本类型：</p>
-<ul>
-<li>布尔型：bool</li>
-<li>整型：int int64 int32 int16 int8 uint8(byte) uint16 uint32 uint64 uint</li>
-<li>浮点型：float32 float64</li>
-<li>复数型：complex64 complex128</li>
-<li>字符串：string</li>
-<li>字符型：byte rune</li>
-</ul>
-<p>复合类型：array, struct, function, interface, slice, map, channel</p>
-<p>关键保留字 25 个：</p>
-<ul>
-<li>var, const ：变量和常量的声明</li>
-<li>package, import: 包声明，包导入</li>
-<li>func： 定义函数和方法</li>
-<li>return： 从函数返回</li>
-<li>defer：在函数退出之前执行</li>
-<li>go : 用于并行</li>
-<li>select: 用于选择不同类型的通讯</li>
-<li>interface: 用于定义接口</li>
-<li>struct: 用于定义抽象数据类型</li>
-<li>break、case、continue、for、fallthrough、else、if、switch、goto、default: 流程控制</li>
-<li>chan: 用于channel通讯</li>
-<li>type: 用于声明自定义类型</li>
-<li>map： 用于声明map类型数据</li>
-<li>range: 用于读取slice、map、channel数据</li>
-</ul>
-<p>内置函数：</p>
-<ul>
-<li>new 分配零值内存 并返回指针</li>
-<li>make 分配内存初始化结构 并返回对象</li>
-<li>append</li>
-<li>close</li>
-<li>recover</li>
-<li>panic</li>
-<li>len</li>
-<li>delete</li>
-<li>copy</li>
-<li>…</li>
-</ul>
-<h4 id="4-实例"><a href="#4-实例" class="headerlink" title="4. 实例"></a>4. 实例</h4><ul>
-<li><p>Hello World</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">package main</div><div class="line">import (</div><div class="line">	&quot;fmt&quot;</div><div class="line">)</div><div class="line">func main() &#123;</div><div class="line">	fmt.Println(&quot;Hello，世界!&quot;)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>变量定义</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">package main</div><div class="line">import (</div><div class="line">	&quot;fmt&quot;</div><div class="line">)</div><div class="line">var(</div><div class="line">	one int</div><div class="line">	two string</div><div class="line">)</div><div class="line">func main() &#123;</div><div class="line">	one, two = 1,&quot;2&quot;</div><div class="line">	three:= &quot;2&quot;</div><div class="line">	fmt.Println(one, two, three )</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>struct, func</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">package main</div><div class="line">import (</div><div class="line">	&quot;fmt&quot;</div><div class="line">)</div><div class="line">type person struct&#123;</div><div class="line">	name string</div><div class="line">	age int</div><div class="line">	gender byte</div><div class="line">&#125;</div><div class="line">func (p *person) getAge() int &#123;</div><div class="line">	return p.age</div><div class="line">&#125;</div><div class="line">func (p *person) getNameAndAge() (string, int)&#123;</div><div class="line">	return p.name, p.age</div><div class="line">&#125;</div><div class="line">func main() &#123;</div><div class="line">	me := person&#123;</div><div class="line">		name: &quot;Meng&quot;,</div><div class="line">		age:18,</div><div class="line">		gender: 0&#125;</div><div class="line">	wo:= new(person)</div><div class="line">	wo.name = &quot;Xi&quot;</div><div class="line">	wo.age = 20</div><div class="line">	wo.gender = 1</div><div class="line">	fmt.Println( me.getAge() )</div><div class="line">	fmt.Println( wo.getNameAndAge() )</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>array，slice</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">package main</div><div class="line">import (</div><div class="line">	&quot;fmt&quot;</div><div class="line">)  </div><div class="line">func main() &#123;</div><div class="line">	var array = [5]string&#123;&quot;1&quot;,&quot;2&quot;&#125;</div><div class="line">	var slice_ []int = make([]int,5,10)</div><div class="line">	fmt.Println(array)</div><div class="line">	fmt.Println(slice_)</div><div class="line">	slice_ = append(slice_,6)</div><div class="line">	array[5]=&quot;6&quot; //报错</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>chan</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">package main</div><div class="line">import &quot;fmt&quot;</div><div class="line">func sum(values []int, resultChan chan int) &#123;</div><div class="line">	sum := 0</div><div class="line">	for _, value := range values &#123;</div><div class="line">		sum += value</div><div class="line">	&#125;</div><div class="line">	// 将计算结果发送到channel中</div><div class="line">	resultChan &lt;- sum</div><div class="line">&#125;</div><div class="line">func main() &#123;</div><div class="line">	values := []int&#123;1, 2, 3, 4, 5, 6, 7, 8, 9, 10&#125;</div><div class="line">	resultChan := make(chan int, 3)</div><div class="line">	go sum(values[:len(values)/2], resultChan)</div><div class="line">	go sum(values[len(values)/2:], resultChan)</div><div class="line">	go sum(values[len(values)/3:], resultChan)</div><div class="line">	sum1, sum2, sum3 := &lt;-resultChan, &lt;-resultChan, &lt;-resultChan</div><div class="line">	fmt.Println(&quot;Result:&quot;, sum1, sum2, sum3)</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>Web Server</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">package main</div><div class="line">import (</div><div class="line">	&quot;io&quot;</div><div class="line">	&quot;net/http&quot;</div><div class="line">	&quot;log&quot;</div><div class="line">)</div><div class="line">func HelloServer(w http.ResponseWriter, req *http.Request) &#123;</div><div class="line">	io.WriteString(w, &quot;hello, world!\n&quot;)</div><div class="line">&#125;</div><div class="line">func main() &#123;</div><div class="line">	http.HandleFunc(&quot;/hello&quot;, HelloServer)</div><div class="line">	err := http.ListenAndServe(&quot;:8080&quot;, nil)</div><div class="line">	if err != nil &#123;</div><div class="line">		log.Fatal(&quot;ListenAndServe: &quot;, err)</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="5-Beego-Web-Framework"><a href="#5-Beego-Web-Framework" class="headerlink" title="5. Beego Web Framework"></a>5. Beego Web Framework</h4><p><a href="https://beego.me/" target="_blank" rel="external">Beego 官网 </a></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;1-Golang-起源&quot;&gt;&lt;a href=&quot;#1-Golang-起源&quot; class=&quot;headerlink&quot; title=&quot;1. Golang 起源&quot;&gt;&lt;/a&gt;1. Golang 起源&lt;/h4&gt;&lt;p&gt;GO 语言由 Google 于 2009 年 11 月开源，荣膺
-    
-    </summary>
-    
-      <category term="Go" scheme="https://chuckniu.github.io/categories/Go/"/>
+    <a class="pull-left" href="/2017/05/01/Go-In-Action/" style="float: left;">
+        ← Go In Action
+    </a>
     
     
-      <category term="Go" scheme="https://chuckniu.github.io/tags/Go/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo 极简使用指南</title>
-    <link href="https://chuckniu.github.io/2017/04/18/Hexo-%E6%9E%81%E7%AE%80%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
-    <id>https://chuckniu.github.io/2017/04/18/Hexo-极简使用指南/</id>
-    <published>2017-04-17T17:36:36.000Z</published>
-    <updated>2017-04-22T20:15:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个静态博客框架，可托管于 Github Pages。 部署流程参考 <a href="https://hexo.io/docs/" target="_blank" rel="external">官方文档</a>， Windows 下最好在 git bash 中执行命令。 </p>
-<h4 id="Install-Git"><a href="#Install-Git" class="headerlink" title="Install Git"></a>Install Git</h4><h4 id="Install-Node-js"><a href="#Install-Node-js" class="headerlink" title="Install Node.js"></a>Install Node.js</h4><h4 id="本地安装-Hexo-Server"><a href="#本地安装-Hexo-Server" class="headerlink" title="本地安装 Hexo Server"></a>本地安装 Hexo Server</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div><div class="line">$ hexo init blog</div><div class="line">$ <span class="built_in">cd</span> blog</div><div class="line">$ npm install</div><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>开启本地server后，默认进入 Hello World 页面, 地址：<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a> 启动前先确认监听端口没被占用。</p>
-<h4 id="建立Github-Pages-项目"><a href="#建立Github-Pages-项目" class="headerlink" title="建立Github Pages 项目"></a>建立Github Pages 项目</h4><p>用于托管静态文件，默认域名为：username.github.io</p>
-<h4 id="修改配置文件-config-yml"><a href="#修改配置文件-config-yml" class="headerlink" title="修改配置文件 _config.yml"></a>修改配置文件 _config.yml</h4><p>安装 deploy 依赖包：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure>
-<p>可在配置文件里定义Blog 信息，主题，部署地址等，修改 deploy 信息为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">   type: git</div><div class="line">   repo: git@github.com:username/username.github.io.git</div><div class="line">   branch: master</div></pre></td></tr></table></figure></p>
-<h4 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<h4 id="清除旧的静态文件"><a href="#清除旧的静态文件" class="headerlink" title="清除旧的静态文件"></a>清除旧的静态文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo clean</div></pre></td></tr></table></figure>
-<h4 id="生成新的静态文件"><a href="#生成新的静态文件" class="headerlink" title="生成新的静态文件"></a>生成新的静态文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<h4 id="部署到站点"><a href="#部署到站点" class="headerlink" title="部署到站点"></a>部署到站点</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<h4 id="访问-Blog"><a href="#访问-Blog" class="headerlink" title="访问 Blog"></a>访问 Blog</h4><p>进入 username.github.io 显示 Hexo 页面则说明搭建成功。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt; 是一个静态博客框架，可托管于 Github Pages。 部署流程参考 &lt;a href=&quot;https://hexo.io/docs/&quot; ta
-    
-    </summary>
-    
-      <category term="Blog" scheme="https://chuckniu.github.io/categories/Blog/"/>
-    
-    
-      <category term="Hexo" scheme="https://chuckniu.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-</feed>
+</nav>
+
+        <div class="duoshuo">
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'ckio';
+	var disqus_config = function () {
+		this.page.url = "https://chuckniu.github.io/2017/06/08/Fabric-简明使用手册/";  // Replace PAGE_URL with your page's canonical URL variable
+		this.page.identifier = "2017/06/08/Fabric-简明使用手册/"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+	};
+	window.addEventListener('load', function(){
+		(function(){
+			var dsq = document.createElement('script');
+			dsq.type = 'text/javascript';
+			dsq.async = true;
+			dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		}());
+	});
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+
+
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer style="padding:1%">
+    <div class="container">
+            <div class="copy" style="float:none; text-align:center">
+                <p>
+                    &copy; <script>new Date().getFullYear()>2010&&document.write(new Date().getFullYear());</script> Content By <a href="//chuckniu.github.io/about/" style="color: #767D84">Niu</a>. All Rights Reserved.
+                Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a>. Hosted In <a href="//github.com" style="color: #767D84">Github</a></p>
+            </div>
+            
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+
+    resizeHero();
+
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$('#intro').find('img').each(function(){
+  var alt = this.alt;
+
+  if (alt){
+    $(this).after('<span class="caption" style="display:none">' + alt + '</span>');
+  }
+
+  $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox" rel="gallery" />');
+});
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      (function(){
+        console.log('font');
+        var getCss = function(path) {
+          var head = document.getElementsByTagName('head')[0];
+          link = document.createElement('link');
+          link.href = path;
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          head.appendChild(link);
+        };
+        getCss('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+        getCss('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+      })();
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
